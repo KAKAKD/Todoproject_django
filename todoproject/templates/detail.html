@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">詳細確認</h1>
+    <p class="lead">詳細を確認してください</p>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class='container'>
+  <div class="alert alert-primary" role="alert">
+    <p>Title : {{ object.title }}</p>
+    <p>Content : {{ object.memo }}</p>
+    <p>Detail : {{ object.detail }}</p>
+  </div>
+</div>
+{% endblock content %}
